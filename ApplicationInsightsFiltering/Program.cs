@@ -39,7 +39,7 @@ var host = new HostBuilder()
         RemoveApplicationInsightsFilter(logging.Services);
 
         // Disable IHttpClientFactory Informational logs.
-        // Note -- you can also handler that does the logging: https://github.com/aspnet/HttpClientFactory/issues/196#issuecomment-432755765 
+        // Note -- you can also remove the handler that does the logging: https://github.com/aspnet/HttpClientFactory/issues/196#issuecomment-432755765 
         logging.AddFilter("System.Net.Http.HttpClient", LogLevel.Warning);
 
         // Disable Informational logs from Azure SDK. These get wired up automatically when using AddAzureClients()
