@@ -16,4 +16,5 @@ I've commented the code explaining what is happening, but before the two filters
 ![image](https://github.com/brettsam/dotnet-isolated-worker-samples/assets/1089915/d97ef1ff-1406-4585-8715-551c4c532a3e)
 
 After applying the filters, we now see these are gone:
+
 ![image](https://github.com/brettsam/dotnet-isolated-worker-samples/assets/1089915/a146e0e3-cc33-4658-8079-b7b0e43e6554)
