@@ -1,8 +1,11 @@
 This sample demonstrates how to filter logs coming from the worker when using the [Microsoft.Azure.Functions.Worker.ApplicationInsights package](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ApplicationInsights).
 
 This package enables the worker to send logs and other telemetry directly to Application Insights, without traveling through the host. To simplify it -- logs would normally flow:
+
 `worker -> host -> application insights`
+
 But as soon as you call `ConfigureFunctionsApplicationInsights()`, they will now flow:
+
 `worker -> application insights`
 
 This gives a developer more control over how Application Insights captures telemetry and emits it than before. Now the `host.json` settings are not as important and the worker (mostly) interacts with Application Insights as if it is "just another console application". All the traditional Application Insights and .NET logging documentation applies.
