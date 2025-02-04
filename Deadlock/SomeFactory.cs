@@ -15,14 +15,14 @@ public class SomeFactory
         {
             lock (_lock)
             {
-                _data ??= RetrieveDataFromExternalServiceAsync();
+                _data ??= RetrieveDataFromExternalService();
             }
         }
 
         return _data;
     }
 
-    private static IDictionary<string, string> RetrieveDataFromExternalServiceAsync()
+    private static IDictionary<string, string> RetrieveDataFromExternalService()
     {
         var connStr = Environment.GetEnvironmentVariable("AzureWebJobsStorage");
 
